@@ -129,12 +129,14 @@
 					<include>9000Buttons</include>
 					<label>653</label>
 					<altlabel>13353</altlabel>
-					<usealttexture>library.isscanningmusic</usealttexture>
+					<usealttexture>library.isscanningvideo</usealttexture>
 				</control>
-				<control type="button" id="698" description="Browse files">
+				<control type="togglebutton" id="21" description="Clean library">
+					<enable>!Skin.HasSetting(LibUpdateOff)</enable>
 					<include>9000Buttons</include>
-					<label>$LOCALIZE[1024] [LOWERCASE]$LOCALIZE[744][/LOWERCASE]</label>
-					<onclick>ActivateWindow(Videos,files)</onclick>
+					<label>14247</label>
+					<usealttexture>library.isscanningvideo</usealttexture>
+					<onclick>CleanLibrary(video)</onclick>
 				</control>
 				<include>DialogFilterButton</include>
 				<control type="button" id="697" description="Playlist">

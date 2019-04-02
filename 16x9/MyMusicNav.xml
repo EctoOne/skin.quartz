@@ -586,16 +586,18 @@
 					<altlabel>13353</altlabel>
 					<usealttexture>library.isscanningmusic</usealttexture>
 				</control>
+				<control type="togglebutton" id="21" description="Clean library">
+					<enable>!Skin.HasSetting(LibUpdateOff)</enable>
+					<include>9000Buttons</include>
+					<label>14247</label>
+					<usealttexture>library.isscanningmusic</usealttexture>
+					<onclick>CleanLibrary(music)</onclick>
+				</control>
 				<control type="button" id="697" description="Playlist">
 					<enable>Integer.IsGreater(Playlist.Length(music),0)</enable>
 					<include>9000Buttons</include>
 					<label>$LOCALIZE[31040]</label>
 					<onclick>ActivateWindow(musicplaylist)</onclick>
-				</control>
-				<control type="button" id="698" description="Files">
-					<include>9000Buttons</include>
-					<label>$LOCALIZE[1024] [LOWERCASE]$LOCALIZE[744][/LOWERCASE]</label>
-					<onclick>ActivateWindow(Music,root)</onclick>
 				</control>
 				<include>DialogFilterButton</include>
 				<control type="togglebutton" id="699" description="Playing">
