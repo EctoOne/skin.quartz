@@ -39,9 +39,10 @@
 					</focusedlayout>
 					<itemlayout width="802" height="81">
 						<include>Watched_Marks</include>
-						<!--<include>HD_Badge</include>-->
+						<include>HD_Badge</include>
 						<include>3D_Badge</include>
 						<include>ArrowNF</include>
+						<include>Sets</include>
 						<control type="label" description="Main Label">
 							<visible>Integer.IsGreater(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
 							<include>52MainLabel</include>
@@ -64,6 +65,7 @@
 						<include>HD_Badge</include>
 						<include>3D_Badge</include>
 						<include>ArrowFO</include>
+						<include>SetsFO</include>
 						<control type="label" description="Main Label">
 							<visible>Integer.IsGreater(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
 							<include>52MainLabelFO</include>
