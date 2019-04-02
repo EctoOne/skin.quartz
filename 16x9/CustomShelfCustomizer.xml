@@ -519,7 +519,16 @@
 						<label2>$INFO[Skin.String(ShelfTV.10.Label)]</label2>
 						<thumb>$INFO[Skin.String(ShelfTV.10.Icon)]</thumb>
 						<onclick>RunScript(script.favourites,property=ShelfTV.10)</onclick>
-					</control>							
+					</control>
+					<control type="radiobutton" id="214" description="Lazy TV">
+						<visible>Library.HasContent(TVShows)</visible>
+						<visible>System.HasAddon(script.lazytv)</visible>
+						<visible>!Skin.HasSetting(TVSectionHide) + Container(50).HasFocus(1002)</visible>
+						<include>SettingsSubmenuButtons</include>
+						<label>Use LazyTV Playlist</label>
+						<onclick>Skin.ToggleSetting(LazyTV)</onclick>
+						<selected>Skin.HasSetting(LazyTV)</selected>
+					</control>
 					<!--MUSIC-->
 					<control type="button" id="300" description="Auto">
 						<visible>Library.HasContent(Music) | Library.HasContent(MusicVideos)</visible>

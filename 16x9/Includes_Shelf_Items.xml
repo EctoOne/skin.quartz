@@ -172,7 +172,7 @@
 		</content>
 	</include>
 	<include name="TV_Recent_Items">
-		<content target="video">special://skin/playlists/episodes.xsp</content>
+		<content target="video">$VAR[TVShelfPop]</content>
 	</include>
 	<include name="TV_NextUp_Items">
 		<!--<content target="video">plugin://service.quartz.tvshelf/?reload=$INFO[Window.Property(quartz_tvshelf)]</content>-->

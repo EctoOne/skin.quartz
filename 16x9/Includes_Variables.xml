@@ -69,6 +69,10 @@
 		<value condition="Skin.HasSetting(MovieShelfAuto)">special://skin/playlists/moviesRND.xsp</value>
 		<value>special://skin/playlists/moviesRA.xsp</value>
 	</variable>
+	<variable name="TVShelfPop">
+		<value condition="Skin.HasSetting(LazyTV)">special://videoplaylists/LazyTV.xsp</value>
+		<value>special://skin/playlists/episodes.xsp</value>
+	</variable>
 	<variable name="SettingsIcon">
 		<value condition="Container(52).HasFocus(0)">settings/interface.png</value>
 		<value condition="Container(52).HasFocus(1)">settings/skin.png</value>
