@@ -200,6 +200,17 @@
 							<bordersize>6</bordersize>
 							<aspectratio>stretch</aspectratio>
 						</control>
+						<control type="label">
+							<posx>16</posx>
+							<posy>300</posy>
+							<width>267</width>
+							<height>45</height>
+							<font>size18</font>
+							<textcolor>White2</textcolor>
+							<shadowcolor>Black</shadowcolor>
+							<align>center</align>
+							<label>[B]$INFO[ListItem.Label][/B]</label>
+						</control>
 					</itemlayout>
 					<focusedlayout height="375" width="300">
 						<control type="image">
@@ -213,7 +224,6 @@
 							<aspectratio>stretch</aspectratio>
 						</control>
 						<control type="label">
-							<animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
 							<posx>16</posx>
 							<posy>300</posy>
 							<width>267</width>
