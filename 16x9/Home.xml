@@ -475,7 +475,7 @@
 							<item id="1" description="Music Videos">
 								<visible>!Skin.HasSetting(Music2) + Library.HasContent(MusicVideos)</visible>
 								<label>3</label>
-								<onclick>ActivateWindow(Videos,MusicVideos,return)</onclick>
+								<onclick>ActivateWindow(Videos,MusicVideoArtists,return)</onclick>
 							</item>
 							<item id="2" description="Library">
 								<visible>!Skin.HasSetting(Music3) + Library.HasContent(Music)</visible>
