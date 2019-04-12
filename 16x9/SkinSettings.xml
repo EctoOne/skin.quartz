@@ -503,6 +503,13 @@
 					<selected>Skin.HasSetting(HideMediaShelves)</selected>
 					<radioposx>1210</radioposx>
 				</control>
+				<control type="radiobutton" id="3415" description="Hide Kodi logo">
+					<include>SkinSettingsButton</include>
+					<label>Hide Kodi logo</label>
+					<onclick>Skin.ToggleSetting(HideKodiLogo)</onclick>
+					<selected>Skin.HasSetting(HideKodiLogo)</selected>
+					<radioposx>1210</radioposx>
+				</control>
 				<control type="radiobutton" id="3410" description="Use fanart slideshow">
 					<include>SkinSettingsButton</include>
 					<label>$LOCALIZE[31169]</label>
