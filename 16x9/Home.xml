@@ -482,6 +482,11 @@
 								<label>14022</label>
 								<onclick>ActivateWindow(Music,root)</onclick>
 							</item>
+							<item id="12" description="Playlists">
+								<visible>!Skin.HasSetting(Music8) + Library.HasContent(Music)</visible>
+								<label>136</label>
+								<onclick>ActivateWindow(Music,Playlists,return)</onclick>
+							</item>
 							<item id="3" description="Files">
 								<visible>!Skin.HasSetting(Music4)</visible>
 								<label>744</label>

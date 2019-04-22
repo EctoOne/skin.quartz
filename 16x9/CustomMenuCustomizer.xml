@@ -530,6 +530,14 @@
 					<onclick>Skin.ToggleSetting(Music3)</onclick>
 					<selected>!Skin.HasSetting(Music3)</selected>
 				</control>
+				<control type="radiobutton" id="314" description="Playlists">
+					<visible>Library.HasContent(Music)</visible>
+					<visible>!Skin.HasSetting(MusicSectionHide) + Container(50).HasFocus(1003)</visible>
+					<include>SettingsSubmenuButtons</include>
+					<label>$LOCALIZE[136]</label>
+					<onclick>Skin.ToggleSetting(Music8)</onclick>
+					<selected>!Skin.HasSetting(Music8)</selected>
+				</control>
 				<control type="radiobutton" id="304" description="Files">
 					<visible>!Skin.HasSetting(MusicSectionHide) + Container(50).HasFocus(1003)</visible>
 					<include>SettingsSubmenuButtons</include>
