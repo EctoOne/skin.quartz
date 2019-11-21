@@ -10,8 +10,8 @@
 	</include>
 	<include name="PlayingInfo">
 		<control type="label" description="Playing label">
-			<posx>94</posx>
-			<posy>-15</posy>
+			<posx>495</posx>
+			<posy>65</posy>
 			<height>45</height>
 			<width>750</width>
 			<label>$LOCALIZE[31023]:</label>
@@ -23,7 +23,7 @@
 		</control>
 		<control type="label" description="Title label">
 			<posx>495</posx>
-			<posy>192</posy>
+			<posy>145</posy>
 			<height>45</height>
 			<width>750</width>
 			<label>$INFO[Player.Title]</label>
@@ -35,7 +35,7 @@
 		</control>
 		<control type="label" description="Artist label">
 			<posx>495</posx>
-			<posy>243</posy>
+			<posy>185</posy>
 			<height>45</height>
 			<width>750</width>
 			<label>$INFO[MusicPlayer.Artist]$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.TVShowTitle]</label>
@@ -47,7 +47,7 @@
 		</control>
 		<control type="label" description="Album Label">
 			<posx>495</posx>
-			<posy>279</posy>
+			<posy>225</posy>
 			<height>45</height>
 			<width>750</width>
 			<label>$INFO[MusicPlayer.Album]$INFO[VideoPlayer.Album]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , - ]$INFO[VideoPlayer.episode,$LOCALIZE[20359] ]</label>
@@ -61,7 +61,7 @@
 			<visible>!String.isempty(Player.Duration)</visible>
 			<visible>Player.HasMedia + ![Player.HasGame | VideoPlayer.HasEpg]</visible>
 			<posx>495</posx>
-			<posy>315</posy>
+			<posy>265</posy>
 			<height>45</height>
 			<width>488</width>
 			<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
@@ -75,7 +75,7 @@
 			<visible>false + !String.isempty(PVR.Duration)</visible>
 			<visible>VideoPlayer.HasEpg</visible>
 			<posx>495</posx>
-			<posy>315</posy>
+			<posy>265</posy>
 			<height>45</height>
 			<width>488</width>
 			<label>$INFO[PVR.Time]$INFO[PVR.Duration, / ]</label>
@@ -85,6 +85,15 @@
 			<textcolor>White</textcolor>
 			<shadowcolor>ShadowDark</shadowcolor>
 		</control>
+		<!--
+		<control type="progress" description="Progress Bar">
+			<posx>495</posx>
+			<posy>315</posy>
+			<width>750</width>
+			<height>24</height>
+			<info>Player.Progress</info>
+		</control>
+		-->
 		<control type="image" description="Cover">
 			<visible>![Videoplayer.content(Movies) | VideoPlayer.HasEpg]</visible>
 			<posx>94</posx>

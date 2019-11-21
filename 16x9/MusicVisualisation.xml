@@ -154,7 +154,7 @@
 								<height>30</height>
 								<width>123</width>
 								<align>right</align>
-								<label fallback="-:-">[B]$INFO[Player.TimeRemaining,-][/B]</label>
+								<label fallback="-:-">[B]$INFO[Player.Duration][/B]</label>
 								<font>size17</font>
 							</control>
 							<control type="label">
@@ -272,7 +272,7 @@
 							<height>30</height>
 							<width>123</width>
 							<align>right</align>
-							<label fallback="-:-">[B]$INFO[Player.TimeRemaining,-][/B]</label>
+							<label fallback="-:-">[B]$INFO[Player.Duration][/B]</label>
 							<font>size17</font>
 						</control>
 						<control type="label">

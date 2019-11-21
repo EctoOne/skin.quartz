@@ -164,7 +164,7 @@
 				<height>30</height>
 				<width>180</width>
 				<align>right</align>
-				<label>$INFO[Player.TimeRemaining,-]</label>
+				<label>$INFO[Player.Duration]</label>
 				<font>size17</font>
 			</control>
 		</control>
