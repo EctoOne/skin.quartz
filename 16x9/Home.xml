@@ -286,6 +286,14 @@
 								<onclick>ActivateWindow(Videos)</onclick>
 								<onclick>SendClick(8)</onclick>
 							</item>
+							<item id="10" description="Playlist">
+								<visible>Integer.IsGreater(Playlist.Length(video),0)</visible>
+								<visible>!Skin.HasSetting(Movies6)</visible>
+								<visible>Library.HasContent(Movies)</visible>
+								<label>$LOCALIZE[559]</label>
+								<onclick>ActivateWindow(videoplaylist)</onclick>
+								<onclick>SendClick(8)</onclick>
+							</item>
 						</content>
 						<include>Animation300</include>
 					</control>
@@ -440,6 +448,14 @@
 								<onclick>ActivateWindow(Videos)</onclick>
 								<onclick>SendClick(8)</onclick>
 							</item>
+							<item id="10" description="Playlist">
+								<visible>Integer.IsGreater(Playlist.Length(video),0)</visible>
+								<visible>!Skin.HasSetting(TV6)</visible>
+								<visible>Library.HasContent(Movies)</visible>
+								<label>$LOCALIZE[559]</label>
+								<onclick>ActivateWindow(videoplaylist)</onclick>
+								<onclick>SendClick(8)</onclick>
+							</item>
 						</content>
 						<include>Animation302</include>
 					</control>
@@ -515,6 +531,13 @@
 								<visible>!Skin.HasSetting(Music5) + [Library.HasContent(Music) | Library.HasContent(MusicVideos)]</visible>
 								<label>137</label>
 								<onclick>ActivateWindow(Music)</onclick>
+								<onclick>SendClick(8)</onclick>
+							</item>
+							<item id="11" description="Playlist">
+								<visible>Integer.IsGreater(Playlist.Length(music),0)</visible>
+								<visible>!Skin.HasSetting(Music6) + [Library.HasContent(Music) | Library.HasContent(MusicVideos)]</visible>
+								<label>$LOCALIZE[559]</label>
+								<onclick>ActivateWindow(musicplaylist)</onclick>
 								<onclick>SendClick(8)</onclick>
 							</item>
 						</content>
