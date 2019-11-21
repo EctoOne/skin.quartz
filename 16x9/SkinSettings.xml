@@ -800,13 +800,13 @@
 					<control type="label">
 						<width>1335</width>
 						<height>75</height>
-						<label>[COLOR grey]$LOCALIZE[31143][/COLOR] $INFO[System.AddonTitle(skin.quartz)]</label>
+						<label>[COLOR grey]$LOCALIZE[31143][/COLOR] $INFO[System.AddonTitle(skin.quartzplus)]</label>
 						<font>size23</font>
 					</control>
 					<control type="label">
 						<width>1335</width>
 						<height>75</height>
-						<label>[COLOR grey]$LOCALIZE[31144][/COLOR] $INFO[System.AddonVersion(skin.quartz)]</label>
+						<label>[COLOR grey]$LOCALIZE[31144][/COLOR] $INFO[System.AddonVersion(skin.quartzplus)]</label>
 						<font>size23</font>
 					</control>
 					<control type="label">
