@@ -44,12 +44,12 @@
 						<include>ArrowNF</include>
 						<include>Sets</include>
 						<control type="label" description="Main Label">
-							<visible>Integer.IsGreater(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+							<visible>$EXP[IsVideoHD] | ListItem.IsFolder</visible>
 							<include>52MainLabel</include>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label" description="Main Label">
-							<visible>![Integer.IsGreater(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+							<visible>![$EXP[IsVideoHD] | ListItem.IsFolder]</visible>
 							<width>711</width>
 							<include>52MainLabel</include>
 							<label>$INFO[ListItem.Label]</label>
@@ -67,12 +67,12 @@
 						<include>ArrowFO</include>
 						<include>SetsFO</include>
 						<control type="label" description="Main Label">
-							<visible>Integer.IsGreater(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
+							<visible>$EXP[IsVideoHD] | ListItem.IsFolder</visible>
 							<include>52MainLabelFO</include>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label" description="Main Label">
-							<visible>![Integer.IsGreater(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+							<visible>![$EXP[IsVideoHD] | ListItem.IsFolder]</visible>
 							<width>711</width>
 							<include>52MainLabelFO</include>
 							<label>$INFO[ListItem.Label]</label>
