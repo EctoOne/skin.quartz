@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">50</defaultcontrol>
-	<include>OpenClose</include>
 	<controls>
-		<include>WeatherBackground</include>
+		<include>FullBackground</include>
 		<include>Header</include>
 		<control type="group" description="Bottom NAV">
 			<posy>0</posy>
 			<posx>0</posx>
-		<!--<control type="image">
-				<posx>0</posx>
-				<posy>990</posy>
-				<width>1920</width>
-				<height>90</height>
+			<control type="image" description="Navbar">
+				<posx>-90</posx>
+				<posy>961</posy>
+				<width>2100</width>
+				<height>136</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>OSD/OSDBackground2.png</texture>
+				<texture>img/HomeMenuBar.png</texture>
 			</control>
-			<control type="image">
-				<posx>60</posx>
-				<posy>1034</posy>
-				<width>21</width>
-				<height>21</height>
-				<texture>icons/reload24.png</texture>
-			</control> -->
 			<control type="label" id="11" description="Time of last update">
 				<posx>-105</posx>
-				<posy>1020</posy>
+				<posy>1002</posy>
 				<width>675</width>
 				<height>45</height>
 				<label></label>
@@ -35,7 +27,7 @@
 			</control>
 			<control type="label" description="Location">
 				<posx>1860</posx>
-				<posy>1017</posy>
+				<posy>1002</posy>
 				<width>675</width>
 				<height>45</height>
 				<label>$INFO[Control.GetLabel(3)]</label>
@@ -44,7 +36,6 @@
 				<textcolor>Silver</textcolor>
 			</control>
 			<control type="group" id="50">
-				<visible>!String.IsEqual(Weather.Plugin,weather.weatherplus)</visible>
 				<onright>61</onright>
 				<onleft>9000</onleft>
 				<onup>51</onup>
@@ -54,7 +45,9 @@
 					<posy>85r</posy>
 					<onright>9000</onright>
 					<onleft>9000</onleft>
-					<width>300</width>
+					<height>66</height>
+					<width>270</width>
+					<align>center</align>
 					<font>size22</font>
 					<label></label>
 					<align>center</align>
@@ -62,10 +55,9 @@
 			</control>
 		</control>
 		<control type="group" id="51">
-			<visible>!String.IsEqual(Weather.Plugin,weather.weatherplus)</visible>
 			<control type="group" description="Left panel">
 				<posx>-30</posx>
-				<posy>135</posy>
+				<posy>35</posy>
 				<control type="image" id="35" description="Current weather icon">
 					<posx>150</posx>
 					<posy>330</posy>
@@ -139,7 +131,6 @@
 					<label></label>
 					<textcolor>ddC6C6C8</textcolor>
 					<visible>!String.IsEmpty(Window.Property(Current.UVIndex))</visible>
-
 				</control>
 				<control type="label" description="Current uv value">
 					<posx>476</posx>
@@ -148,7 +139,6 @@
 					<height>30</height>
 					<label>$INFO[Window.Property(Current.UVIndex)]</label>
 					<visible>String.IsEmpty(Window.Property(Current.UVIndex))</visible>
-
 				</control>
 				<control type="label" id="226" description="Current wind label">
 					<posx>450</posx>
@@ -188,7 +178,7 @@
 						<height>30</height>
 						<font>size24B</font>
 						<textcolor>Silver</textcolor>
-						<label>$INFO[Window.Property(Day0.LowTemp)] / $INFO[Window.Property(Day0.HighTemp)]</label>
+						<label>$INFO[Window.Property(Day0.HighTemp)] / $INFO[Window.Property(Day0.LowTemp)]</label>
 					</control>
 					<control type="label" description="Conditions 0">
 						<posy>105</posy>
@@ -226,7 +216,7 @@
 						<height>30</height>
 						<font>size24B</font>
 						<textcolor>Silver</textcolor>
-						<label>$INFO[Window.Property(Day1.LowTemp)] / $INFO[Window.Property(Day1.HighTemp)]</label>
+						<label>$INFO[Window.Property(Day1.HighTemp)] / $INFO[Window.Property(Day1.LowTemp)]</label>
 					</control>
 					<control type="label" description="Conditions 1">
 						<posy>105</posy>
@@ -264,7 +254,7 @@
 						<height>30</height>
 						<font>size24B</font>
 						<textcolor>Silver</textcolor>
-						<label>$INFO[Window.Property(Day2.LowTemp)] / $INFO[Window.Property(Day2.HighTemp)]</label>
+						<label>$INFO[Window.Property(Day2.HighTemp)] / $INFO[Window.Property(Day2.LowTemp)]</label>
 					</control>
 					<control type="label" description="Conditions 1">
 						<posy>105</posy>
@@ -302,7 +292,7 @@
 						<height>30</height>
 						<font>size24B</font>
 						<textcolor>Silver</textcolor>
-						<label>$INFO[Window.Property(Day3.LowTemp)] / $INFO[Window.Property(Day3.HighTemp)]</label>
+						<label>$INFO[Window.Property(Day3.HighTemp)] / $INFO[Window.Property(Day3.LowTemp)]</label>
 					</control>
 					<control type="label" description="Conditions 3">
 						<posy>105</posy>
